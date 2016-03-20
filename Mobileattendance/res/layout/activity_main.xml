@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+     tools:context=".MainActivity"
+     >
+
+    <RadioGroup
+        android1:id="@+id/radioGroup1"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignRight="@+id/tvv"
+        android1:layout_below="@+id/tvv"
+        android1:layout_marginRight="64dp" >
+    </RadioGroup>
+
+    <TextView
+        android1:id="@+id/tvv"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_alignParentTop="true"
+        android1:layout_marginLeft="31dp"
+        android1:layout_marginTop="31dp"
+        android1:text="Enable or disable location"
+        android1:textSize="20dp" />
+
+    <RadioGroup
+        android1:id="@+id/radioGroup2"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignParentLeft="true"
+        android1:layout_below="@+id/radioGroup1"
+        android1:layout_marginLeft="27dp"
+        android1:layout_marginTop="30dp" >
+
+        <RadioButton
+            android1:id="@+id/on"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:checked="true"
+            android1:text="On" />
+
+        <RadioButton
+            android1:id="@+id/offr"
+            android1:layout_width="wrap_content"
+            android1:layout_height="wrap_content"
+            android1:text="Off" />
+    </RadioGroup>
+
+    <Button
+        android1:id="@+id/buttgo"
+        android1:layout_width="wrap_content"
+        android1:layout_height="wrap_content"
+        android1:layout_alignLeft="@+id/tvv"
+        android1:layout_centerVertical="true"
+        android1:text="GO" />
+
+</RelativeLayout>
